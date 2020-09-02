@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/mqtt-cnc/mysql-mqtt-parser.py
+
+[Install]
+WantedBy=multi-user.target

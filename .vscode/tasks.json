@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "PlatformIO",
+			"task": "Pre-Debug",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"label": "PlatformIO: Pre-Debug [build in debug mode]"
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: xtensa-esp32-elf-gcc.exe build active file",
+			"command": "C:/Users/Preben/.platformio/packages/toolchain-xtensa32/bin/xtensa-esp32-elf-gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mlongcalls"
+			],
+			"options": {
+				"cwd": "C:/Users/Preben/.platformio/packages/toolchain-xtensa32/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}
