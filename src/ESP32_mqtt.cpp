@@ -18,9 +18,9 @@ SSD1306Wire display(0x3c, SDA, SCL, GEOMETRY_128_32);   // ADDRESS, SDA, SCL  - 
 /////////////////////////////////////////////////////////////////
 
 
-Button2 button = Button2(BUTTON_PIN);
+Button2 button = Button2(BUTTON_PIN); // connect button
 
-ESPRotary r = ESPRotary(ROTARY_PIN1, ROTARY_PIN2, CLICKS_PER_STEP);
+ESPRotary r = ESPRotary(ROTARY_PIN1, ROTARY_PIN2, CLICKS_PER_STEP); //define rotary encoder
 
 Servo myservo;
 
