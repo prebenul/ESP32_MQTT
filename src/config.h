@@ -9,7 +9,7 @@ int mqttPort = 1883;
 #define ROTARY_PIN1  18
 #define ROTARY_PIN2 19
 #define BUTTON_PIN  23
-#define CLICKS_PER_STEP   4   // this number depends on your rotary encoder 
+#define CLICKS_PER_STEP   2   // this number depends on your rotary encoder 
 
 #define SDA 21
 #define SDL 22

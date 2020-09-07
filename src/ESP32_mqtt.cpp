@@ -51,6 +51,11 @@ void rotate(ESPRotary& r) {
   push(r.getPosition());
 }
 
+void drawPosition() {
+    display.drawString(110, 22, String(r.getPosition()));
+  display.display();
+}
+
 void tap(Button2& btn) {
   myservo.write(b);
 }
@@ -82,6 +87,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   display.drawString(0, 0, "Rw: " + String(row) + " -Lng " + String(b));
   display.drawString(0, 11, "Width: " + String(width));
   display.drawString(0, 22, String(outerdiam) + " - segs: " + String(segs));
+  drawPosition();
   display.display();
 
   Serial.println(id);

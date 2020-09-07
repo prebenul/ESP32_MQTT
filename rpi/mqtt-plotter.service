@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=idle
 User=pi
-ExecStart=/usr/bin/python3 /home/pi/mqtt-cnc/mysql-mqtt-parser.py
+ExecStart=/usr/bin/python3 /home/pi/ESP32_MQTT/rpi/mysql_mqtt_parser.py
 
 [Install]
 WantedBy=multi-user.target
